@@ -5,12 +5,11 @@ func _ready():
 	pass
 
 func _physics_process(delta):
-	if Input.is_action_pressed("ui_left"):
-		position.x = position.x - 10
-		print("pressed left")
-	if Input.is_action_pressed("ui_right"):
+	if Input.is_action_pressed("left"):
+		position.x -= 10
+	if Input.is_action_pressed("right"):
 		position.x += 10
-	if Input.is_action_pressed("ui_down"):
+	if Input.is_action_pressed("down"):
 		position.y += 10
-	if Input.is_action_pressed("ui_up"):
+	if Input.is_action_pressed("up"):
 		position.y -= 10
